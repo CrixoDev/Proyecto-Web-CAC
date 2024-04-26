@@ -37,18 +37,22 @@ nav .p2 {
 .seccion2 {
     display: flex;
     background-color: purple;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    flex-direction: column;
     height: 30rem;
   }
   .seccion3 {
     display: flex;
     background-color: green;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 30rem;
+  }
+  .seccion3 .p2 {
+    display: flex;
+    flex-direction: row;
+    scrollbar-width: 5%;
   }
   .seccion4 {
     display: flex;
