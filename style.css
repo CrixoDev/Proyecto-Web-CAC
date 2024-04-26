@@ -116,13 +116,13 @@ nav .p2 {
 .seccion-cards .cards .card img {
   object-fit: cover;
   height: 300px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 20px rgb(68, 2, 46);
   transition: all .5s;
   border-radius: 15px;
 }
 
 .seccion-cards .cards .card img:hover {
-  box-shadow: 0px 0px 30px rgb(221, 34, 181);
+  box-shadow: 0px 0px 40px rgb(221, 34, 181);
 }
 
 .seccion-carousel {
@@ -153,7 +153,7 @@ nav .p2 {
   width: 200px;
   height: 200px;
   margin-right: 10px;
-  background-color: rgb(128, 7, 87);
+  background-color: rgb(68, 2, 46);
   margin: 0 20px;
 }
 
