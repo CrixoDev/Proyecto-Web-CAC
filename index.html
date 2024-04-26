@@ -1,90 +1,1108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto Codo a Codo Frontend</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="main-container">
-        <nav>
-            <div class="p1">
-                <img src="" alt="" class="logo">LOGOPrueba
-                <div class="titulo">Probando</div>
-            </div>
-            <div class="p2">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="main-container">
+            <nav class="black">
+                <div class="p1">
+                    <img src alt class="logo">LOGOPrueba
+                    <div class="titulo">Probando</div>
+                </div>
+                <div class="p2">
                     <p>Tendencias</p>
                     <p>Registrarse</p>
                     <p>Iniciar Sesión</p>
-            </div>
-        </nav>
-        <section class="seccion1">
-            <h1>TITULO</h1>
-            <h2>SUBTITULO</h2>
-            <button>Registrarse</button>
-        </section>
-        <section class="seccion2">
-            <div class="p1">
+                </div>
+            </nav>
+            <section class="seccion1">
                 <h1>TITULO</h1>
-            </div>
-            <div class="p2">
-                <input type="text" placeholder="LLENA ESTO GATO!!">
-                <button>HACE CLICK</button>
-            </div>
-        </section>
-        <section class="seccion3">
-            <div class="p1">
-                <h1>TITULO</h1>
-            </div>
-            <div class="p2">
-                <div class="card"><img src="./assets/img/1.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/2.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/3.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/4.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/5.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/6.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/7.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/8.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/9.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/10.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/11.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/12.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/13.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/14.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/15.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/16.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/17.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/18.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/19.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/20.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/21.jpg" alt=""></div>
-                <div class="card"><img src="./assets/img/22.jpg" alt=""></div>
-            </div>
-            <div class="p3">
-                <button>Anterior</button>
-                <button>Siguiente</button>
-            </div>
-        </section>
-        <section class="seccion4">
-            <div class="p1">
-                <h1>TITULO</h1>
-            </div>
-            <div class="p2">
-                <div class="card">IMAGEN</div>
-                <div class="card">IMAGEN</div>
-                <div class="card">IMAGEN</div>
-                <div class="card">IMAGEN</div>
-                <div class="card">IMAGEN</div>
-            </div>
-        </section>
-        <footer>
-            <p>Términos y condiciones</p>
-            <p>Preguntas Frecuentes</p>
-            <p>Ayuda</p>
-            <p>Administrador de Peliculas</p>
-        </footer>
-    </div>
-</body>
+                <h2>SUBTITULO</h2>
+                <button>Registrarse</button>
+            </section>
+            <section class="seccion2">
+                <div class="p1">
+                    <h1>TITULO</h1>
+                </div>
+                <div class="p2">
+                    <input type="text" placeholder="LLENA ESTO GATO!!">
+                    <button>HACE CLICK</button>
+                </div>
+            </section>
+            <section class="seccion3">
+                <div class="p1">
+                    <h1>TITULO</h1>
+                </div>
+                <div class="p2">
+                    <div class="card"><img src="./assets/img/1.jpg" alt></div>
+                    <div class="card"><img src="./assets/img/2.jpg" alt></div>
+                    <div class="card"><img src="./assets/img/3.jpg" alt></div>
+                    <div class="card"><img src="./assets/img/4.jpg" alt></div>
+                </div>
+                <div class="p3">
+                    <button>Anterior</button>
+                    <button>Siguiente</button>
+                </div>
+            </section>
+            <section class="seccion4">
+                <div class="p1">
+                    <h1>Carrusel de Imagenes</h1>
+                </div>
+                <div class="p2">
+                    <div id="carruselImagenes" class="carousel slide"
+                        data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="0" class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="4"
+                                aria-label="Slide 5"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="5"
+                                aria-label="Slide 6"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="6"
+                                aria-label="Slide 7"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="7"
+                                aria-label="Slide 8"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="8"
+                                aria-label="Slide 9"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="9"
+                                aria-label="Slide 10"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="10"
+                                aria-label="Slide 11"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="11"
+                                aria-label="Slide 12"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="12"
+                                aria-label="Slide 13"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="13"
+                                aria-label="Slide 14"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="14"
+                                aria-label="Slide 15"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="15"
+                                aria-label="Slide 16"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="16"
+                                aria-label="Slide 17"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="17"
+                                aria-label="Slide 18"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="18"
+                                aria-label="Slide 19"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="19"
+                                aria-label="Slide 20"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="20"
+                                aria-label="Slide 21"></button>
+                            <button type="button"
+                                data-bs-target="#carruselImagenes"
+                                data-bs-slide-to="21"
+                                aria-label="Slide 22"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <img src="./assets/img/1.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Cowboy bebop</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Aventuras</span>
+                                            <span
+                                                class="badge bg-primary">Ciencia
+                                                Ficción</span>
+                                            <span
+                                                class="badge bg-primary">Comedia</span>
+                                            <span
+                                                class="badge bg-primary">Drama</span>
+                                            <span
+                                                class="badge bg-primary">Espacial</span>
+                                        </div>
+                                        <p class="card-text">En este anime, el
+                                            director Shinichiro Watanabe nos
+                                            narra las aventuras de Spike, Faye,
+                                            Jet Black, Ed y Ein... Un grupo muy
+                                            peculiar de caza-recompensas que
+                                            viaja a través del sistema solar en
+                                            la nave Bebop. Balas, emoción y
+                                            diversión se encuentran en cada una
+                                            de sus sesiones autoconclusivas, las
+                                            cuales los llevarán a enfrentar a un
+                                            gran adversario y viejo amigo de
+                                            Spike..</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/2.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">FULLMETAL
+                                            ALCHEMIST : Brotherhood</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Aventuras</span>
+                                            <span
+                                                class="badge bg-primary">Drama</span>
+                                            <span
+                                                class="badge bg-primary">Fantasía</span>
+                                            <span
+                                                class="badge bg-primary">Magia</span>
+                                            <span
+                                                class="badge bg-primary">Militar</span>
+                                            <span
+                                                class="badge bg-primary">Shounen</span>
+                                        </div>
+                                        <p class="card-text">La historia se
+                                            centra en dos hermanos, Edward Elric
+                                            y Alphonse Elric que rompieron el
+                                            mayor tabú de la alquimia, la
+                                            trasmutación humana al tratar de
+                                            revivir a su fallecida madre; en
+                                            consecuencia Edward pierde su pierna
+                                            izquierda y Alphonse pierde todo su
+                                            cuerpo, Edward para salvar a su
+                                            hermano sella su alma en una gran
+                                            armadura de hierro a cambio de su
+                                            brazo derecho; ahora los dos con un
+                                            nuevo objetivo buscan
+                                            desesperadamente la piedra filosofal
+                                            para poder regresar sus cuerpos a la
+                                            normalidad...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/3.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Death Note</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Misterio</span>
+                                            <span
+                                                class="badge bg-primary">Policía</span>
+                                            <span
+                                                class="badge bg-primary">Psicológico</span>
+                                            <span
+                                                class="badge bg-primary">Sobrenatural</span>
+                                            <span
+                                                class="badge bg-primary">Suspenso</span>
+                                        </div>
+                                        <p class="card-text">Light Yagami es un
+                                            excelente estudiante japonés que ha
+                                            tenido una vida aburrida. Esto
+                                            cambia radicalmente cuando encuentra
+                                            tirado en el suelo un cuaderno
+                                            conocido como Death Note (Libreta de
+                                            la Muerte), un cuaderno perdido por
+                                            Ryuk, un Shinigami (Dios de la
+                                            muerte). Cualquier humano cuyo
+                                            nombre esté escrito en el cuaderno
+                                            morirá, y ahora Light ha decidido
+                                            utilizar este poder para crear un
+                                            mundo perfecto sin criminales. Pero
+                                            cuando los criminales comienzan a
+                                            morir de forma masiva, las
+                                            autoridades envían al legendario
+                                            detective L en busca del asesino.
+                                            Con L pisándole los talones, Podrá
+                                            mantener Light su noble propósito
+                                            incluso arriesgando su vida.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/4.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Tengen Toppa
+                                            Gurren Lagann</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Aventuras</span>
+                                            <span
+                                                class="badge bg-primary">Ciencia
+                                                Ficción</span>
+                                            <span
+                                                class="badge bg-primary">Comedia</span>
+                                            <span
+                                                class="badge bg-primary">Mecha</span>
+                                        </div>
+                                        <p class="card-text">La humanidad es
+                                            obligada a vivir bajo la superficie
+                                            pasando asi muchos siglos, llegando
+                                            a olvidarse y convirtiendo en una
+                                            leyenda la vida en la superficie.
+                                            Asi se crean pequeñas colonias
+                                            excavando por distintos lugares y
+                                            tratando de escapar de los terribles
+                                            terremotos. En una de esas colonias
+                                            vive Simon, uno de los mejores
+                                            excavadores, que en unos de los
+                                            agujeros encuentra una extraña llave
+                                            en forma de torno. Si bien todos se
+                                            mofan de Simon por ser muy raro y de
+                                            poca autoestima, el único que lo
+                                            respalda siempre es Kamina quien lo
+                                            invita a ir hacia la superficie. Por
+                                            supuesto el Jefe de la colonia
+                                            prohibe esta acción que se supone
+                                            que es tabú para la gente y encierra
+                                            a Kamina. En una excavación
+                                            nocturna, Simon encuentra esta vez
+                                            un mecha en forma de cara y corre
+                                            hacia Kamina para mostrárselo, pero
+                                            de repente un enorme robot con forma
+                                            de cara cae desde la superficie y al
+                                            igual una misteriosa chica que lo
+                                            ataca con su rifle. Simon, Kamina y
+                                            la chica (Yoko) tratan de escapar y
+                                            Simon los conduce a su
+                                            descubrimiento, ahi le dice a Kamina
+                                            que lo maneje para derrotar al robot
+                                            sin embargo, Kamina le responde que
+                                            esa mecha le pertenece y por lo
+                                            tanto él debería manejarlo... entre
+                                            idas y vueltas los 3 entran en la
+                                            cabeza y ante un impulso de Kamina
+                                            junto con la ayuda de Yoko, Simon
+                                            logra de algún modo derrotar a la
+                                            enorme cara; no solo eso sino que
+                                            son explusado hacia la
+                                            superficie...Alli Simon y Kamina
+                                            descubre un maravillos o mundo para
+                                            ellos pero también se encuentra con
+                                            la sorpresa de que en la superficie
+                                            un grupo de Ganmen (Mechas con forma
+                                            de cara) que atacan a los humanos
+                                            que suben a la superficie</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/5.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Psycho-Pass</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Ciencia
+                                                Ficción</span>
+                                            <span
+                                                class="badge bg-primary">Policía</span>
+                                            <span
+                                                class="badge bg-primary">Psicológico</span>
+                                        </div>
+                                        <p class="card-text">En un futuro
+                                            próximo en el que es posible medir y
+                                            cuantificar de forma instantánea el
+                                            estado mental de una persona y su
+                                            personalidad. Esta información es
+                                            grabada y procesada; Psycho-Pass
+                                            hace referencia al nombre común de
+                                            las referencias al respecto de cada
+                                            persona. La historia nos presenta a
+                                            Shinya Kougami,un agente de la ley
+                                            en este mundo cuya tarea es luchar
+                                            contra el crimen.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/6.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Darker Than
+                                            Black</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Ciencia
+                                                Ficción</span>
+                                            <span
+                                                class="badge bg-primary">Misterio</span>
+                                            <span
+                                                class="badge bg-primary">Superpoderes</span>
+                                        </div>
+                                        <p class="card-text">Un territorio
+                                            inescrutable e inexplorado conocido
+                                            como Hell's Gate (La Puerta del
+                                            Infierno), hizo aparición de pronto
+                                            en el pasado, privando a Tokyo de su
+                                            cielo original. Como consecuencia,
+                                            aparecieron también personas con
+                                            habilidades especiales, los Dolls
+                                            (Marionetas) y los Contratistas. Las
+                                            Marionetas son mediums carentes de
+                                            emoción, mientras que los
+                                            Contratistas poseen ciertos poderes
+                                            especiales, y parecen tener como
+                                            principal finalidad la de matar. Las
+                                            agencias de inteligencia de todo el
+                                            mundo utilizan Contratistas para
+                                            encubrir secretos relacionados con
+                                            la Hell's Gate, y llevan a cabo
+                                            violentas batallas por la posesión
+                                            de información al respecto.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/7.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Boku no Hero
+                                            Academia</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Comedia</span>
+                                            <span
+                                                class="badge bg-primary">Escolares</span>
+                                            <span
+                                                class="badge bg-primary">Shounen</span>
+                                            <span
+                                                class="badge bg-primary">Superpoderes</span>
+                                        </div>
+                                        <p class="card-text">Las personas no
+                                            nacen igual. El protagonista de esta
+                                            historia es uno de esos casos raros
+                                            que nacen sin superpoderes, pero
+                                            esto no le impedirá perseguir su
+                                            sueño: ser un gran héroe como el
+                                            legendario All-Might. Para
+                                            convertirse en el héroe que quiere
+                                            ser, se apuntará a una de las
+                                            academias de héroes más prestigiosas
+                                            del país: Yueiko. Con la ayuda de su
+                                            ídolo, All-Might, ¿podrá convertirse
+                                            en un verdadero héroe?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/8.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Jujutsu Kaisen
+                                            (TV)</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Demonios</span>
+                                            <span
+                                                class="badge bg-primary">Escolares</span>
+                                            <span
+                                                class="badge bg-primary">Shounen</span>
+                                            <span
+                                                class="badge bg-primary">Sobrenatural</span>
+                                            <span
+                                                class="badge bg-primary">Terror</span>
+                                        </div>
+                                        <p class="card-text">Yuuji Itadori es un
+                                            estudiante de instituto con unas
+                                            habilidades físicas excepcionales.
+                                            Todos los días, como rutina, va al
+                                            hospital a visitar a su abuelo
+                                            enfermo y decide apuntarse al club
+                                            de ocultismo del instituto para no
+                                            dar un palo al agua… Sin embargo, un
+                                            buen día el sello del talismán que
+                                            se hallaba escondido en su instituto
+                                            se rompe, y comienzan a aparecer
+                                            unos monstruos. Ante este giro de
+                                            los acontecimientos, Itadori decide
+                                            adentrarse en el instituto para
+                                            salvar a sus compañeros. ¿Qué le
+                                            deparará el destino?</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/9.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Kimetsu no
+                                            Yaiba</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Demonios</span>
+                                            <span
+                                                class="badge bg-primary">Historico</span>
+                                            <span
+                                                class="badge bg-primary">Shounen</span>
+                                            <span
+                                                class="badge bg-primary">Sobrenatural</span>
+                                        </div>
+                                        <p class="card-text">Estamos en la era
+                                            Taisho de Japón. Tanjiro, un joven
+                                            que se gana la vida vendiendo
+                                            carbón, descubre un día que su
+                                            familia ha sido asesinada por un
+                                            demonio. Para empeorar las cosas, su
+                                            hermana menor Nezuko, la única
+                                            superviviente de la masacre, ha
+                                            sufrido una transformación en
+                                            demonio. Destrozado por los
+                                            acontecimientos Tanjiro decide
+                                            convertirse en un cazador de
+                                            demonios para poder devolver a su
+                                            hermana a la normalidad y matar al
+                                            demonio que masacró a su
+                                            familia.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/10.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">One Punch
+                                            Man</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Ciencia
+                                                Ficción</span>
+                                            <span
+                                                class="badge bg-primary">Comedia</span>
+                                            <span
+                                                class="badge bg-primary">Parodia</span>
+                                            <span
+                                                class="badge bg-primary">Seinen</span>
+                                            <span
+                                                class="badge bg-primary">Sobrenatural</span>
+                                            <span
+                                                class="badge bg-primary">Superpoderes</span>
+                                        </div>
+                                        <p class="card-text">La serie está
+                                            protagonizada por un héroe que ha
+                                            entrenado tanto que se ha quedado
+                                            calvo, y tiene tanta fuerza que
+                                            puede acabar con cualquier enemigo
+                                            de un solo puñetazo. Sin embargo, al
+                                            ser tan fuerte, se aburre y se
+                                            frustra porque no le cuesta nada
+                                            vencer sus batallas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/11.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">BEASTARS</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Drama</span>
+                                            <span
+                                                class="badge bg-primary">Psicológico</span>
+                                            <span
+                                                class="badge bg-primary">Recuentos
+                                                de la vida</span>
+                                            <span
+                                                class="badge bg-primary">Shounen</span>
+                                        </div>
+                                        <p class="card-text">En un mundo poblado
+                                            por animales antropomórficos,
+                                            conviven herbívoros y carnívoros.
+                                            Para los adolescentes de la Academia
+                                            Cherryton, la vida escolar está
+                                            llena de esperanza, romance,
+                                            desconfianza e inquietud. El
+                                            personaje principal es Legoshi el
+                                            lobo, miembro del club de teatro. A
+                                            pesar de su apariencia amenazante,
+                                            tiene un corazón muy gentil. Durante
+                                            la mayor parte de su vida, siempre
+                                            ha sido objeto de temor y odio de
+                                            otros animales, y se ha acostumbrado
+                                            bastante a ese estilo de vida. Pero
+                                            después del asesinato de un
+                                            compañero de clase, se encuentra
+                                            cada vez más involucrado con sus
+                                            otros compañeros, que tienen su
+                                            propia cuota de inseguridades, y
+                                            encuentra que su vida en la escuela
+                                            cambia lentamente.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/12.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Tokyo
+                                            Revengers</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Drama</span>
+                                            <span
+                                                class="badge bg-primary">Escolares</span>
+                                            <span
+                                                class="badge bg-primary">Shounen</span>
+                                        </div>
+                                        <p class="card-text">Mientras miraba las
+                                            noticias, Takemichi Hanagaki se
+                                            entera de que su novia de
+                                            secundaria, Hinata Tachibana, ha
+                                            muerto. La única chica que alguna
+                                            vez se fijó en él fue asesinada por
+                                            un grupo de criminales conocidos
+                                            como la Banda Tokyo Manji. Takemichi
+                                            vive en un viejo departamento con
+                                            delgadas paredes, y en su trabajo,
+                                            su jefa seis años menor que él lo
+                                            trata como basura. Para rematar, es
+                                            un completo virgen… En la cúspide de
+                                            la miseria de su vida, de repente
+                                            vuelve en el tiempo doce años a sus
+                                            días de secundaria. Para salvar a
+                                            Hinata y cambiar el curso del
+                                            tiempo, ¡el alguna vez inútil
+                                            trabajador de medio tiempo Takemichi
+                                            deberá buscar volverse el líder de
+                                            la banda criminal más tenebrosa de
+                                            Tokio!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/13.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Chainsaw Man</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Sobrenatural</span>
+                                        </div>
+                                        <p class="card-text">Denji es un
+                                            adolescente que vive con un demonio
+                                            motosierra llamado Pochita. Debido a
+                                            la deuda que dejó su padre, ha
+                                            estado viviendo una vida por los
+                                            suelos mientras paga su deuda
+                                            recolectando cadáveres de demonios
+                                            con Pochita. Un día, Denji es
+                                            traicionado y asesinado. A medida
+                                            que su conciencia se desvanece, hace
+                                            un contrato con Pochita y revive
+                                            como "Chainsaw Man", un hombre con
+                                            un corazón de diablo.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/14.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Spy x Family</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Comedia</span>
+                                            <span
+                                                class="badge bg-primary">Shounen</span>
+                                        </div>
+                                        <p class="card-text">Todo el mundo tiene
+                                            una parte de sí mismos que no puede
+                                            mostrar a los demás. En una era en
+                                            la que las naciones de todo el mundo
+                                            se encuentran involucradas en una
+                                            feroz guerra de información a puerta
+                                            cerrada, Ostania y Westalis llevan
+                                            décadas en guerra fría. La División
+                                            de Inteligencia de Westalis (WISE)
+                                            envía a su mejor espía, "Twilight",
+                                            en una misión ultrasecreta para
+                                            vigilar los movimientos de Donovan
+                                            Desmond, quien dirige el Partido
+                                            Nacional por la Unidad de Ostania,
+                                            responsable de bombardear los
+                                            esfuerzos de paz entre ambos países.
+                                            La misión tiene por nombre
+                                            "Operación Strix". La idea es
+                                            "crear una familia en una semana para infiltrarse en las reuniones sociales organizadas por la escuela de élite a la que asiste el hijo de Desmond".
+                                            Twilight adopta la identidad del
+                                            psiquiatra Loid Forger y comienza a
+                                            buscar miembros para su familia,
+                                            pero Anya, la hija que adopta,
+                                            resulta tener la capacidad para leer
+                                            las mentes a los demás, mientras que
+                                            su esposa, Yor, es una asesina.
+                                            Todos mantendrán estos en secreto,
+                                            pero comenzarán una vida juntos en
+                                            la que deberán ocultarse sus
+                                            identidades unos a otros. La paz del
+                                            mundo está ahora en manos de esta
+                                            nueva familia mientras se embarcan
+                                            en una aventura repleta de
+                                            sorpresas.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/15.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Black Clover
+                                            (TV)</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Comedia</span>
+                                            <span
+                                                class="badge bg-primary">Fantasía</span>
+                                            <span
+                                                class="badge bg-primary">Magia</span>
+                                            <span
+                                                class="badge bg-primary">Shounen</span>
+                                        </div>
+                                        <p class="card-text">La historia de
+                                            Black Clover nos pone en la piel de
+                                            un joven llamado Asta, el cual
+                                            quiere convertirse en el mago más
+                                            grande del reino. Sin embargo, hay
+                                            un inconveniente: ¡no puede usar
+                                            magia! Por suerte, Asta recibe el
+                                            grimorio trébol de cinco hojas, que
+                                            le otorga el poder de la anti-magia.
+                                            ¿Puede alguien carente de magia
+                                            convertirse en el Rey Hechicero? Una
+                                            cosa está clara, Asta nunca se
+                                            rendirá.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/16.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">JoJo's Bizarre
+                                            Adventure The Animation</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Aventuras</span>
+                                            <span
+                                                class="badge bg-primary">Shounen</span>
+                                            <span
+                                                class="badge bg-primary">Sobrenatural</span>
+                                            <span
+                                                class="badge bg-primary">Vampiros</span>
+                                        </div>
+                                        <p class="card-text">La historia
+                                            comienza con Jonathan Joestar, que
+                                            vive con su padre George en
+                                            Inglaterra con un nivel económico
+                                            alto. Otro chico Dio Brando es
+                                            adoptado por ellos dos ya que George
+                                            creía que su padre Dario Brando les
+                                            había salvado la vida. Jonathan
+                                            trata de ser amigo de Dio, pero el
+                                            plan de Dio es llevar a JoJo a la
+                                            locura y ganar la confianza de
+                                            George para conventirse en el
+                                            heredero de la fortuna Joestar. Para
+                                            lograrlo Dio golpea a Jonathan, besa
+                                            a su novia Erina y quema a su perro
+                                            Danny, y al mismo tiempo se gana la
+                                            confianza de George con sus buenos
+                                            modales, pero eso es solo el
+                                            comienzo todo se complica cuando DIO
+                                            se cruza con la
+                                            "mascara del demonio" y su odio por
+                                            jojo deja de ser un asunto de
+                                            dinero. La Historia sigue con todos
+                                            los susesores de Jonathan
+                                            Joestar(JoJo), hijos, nietos que
+                                            comparten sus ideales</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/17.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3
+                                            class="card-title">Bakemonogatari</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Misterio</span>
+                                            <span
+                                                class="badge bg-primary">Romance</span>
+                                            <span
+                                                class="badge bg-primary">Sobrenatural</span>
+                                            <span
+                                                class="badge bg-primary">Vampiros</span>
+                                        </div>
+                                        <p class="card-text">La serie se centra
+                                            en Komoyi Araragi, un estudiante de
+                                            tercer año de secundaria, quien
+                                            trata de vivir su vida normal de
+                                            nuevo tras haber sido un vampiro. Un
+                                            día, una compañera de clase llamada
+                                            Hitagi Senj?gahara,(quien tiene la
+                                            fama de no hablar con nadie), se cae
+                                            de las escaleras y aterriza en los
+                                            brazos de Araragi El se percata de
+                                            que Hitagi pesa muy poco para su
+                                            estatura. Tras una charla con ella,
+                                            Komoyi le ofrece su ayuda y le
+                                            presenta a Meme Oshino, un hombre de
+                                            mediana edad quien ayudo a nuestro
+                                            protagonista a volver a ser humano.
+                                            A lo largo de la serie Araragi
+                                            comienza a conocer casos de otras
+                                            personas que han tenido encuentros
+                                            paranormales como los de el y decide
+                                            ayudarles (curiosamente son puras
+                                            chicas).</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/18.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">NANA</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Comedia</span>
+                                            <span
+                                                class="badge bg-primary">Drama</span>
+                                            <span
+                                                class="badge bg-primary">Música</span>
+                                            <span
+                                                class="badge bg-primary">Recuentos
+                                                de la vida</span>
+                                            <span
+                                                class="badge bg-primary">Romance</span>
+                                            <span
+                                                class="badge bg-primary">Shoujo</span>
+                                        </div>
+                                        <p class="card-text">Dos chicas de la
+                                            misma edad y mismo nombre se
+                                            conocieron en el tren para ir a
+                                            Tokio. Sus nombres son NANA. Una de
+                                            ellas es una chica que quiere ser
+                                            famosa con su grupo de música y la
+                                            otra quiere estar con su novio que
+                                            vive en Tokio. Después de conocerse
+                                            ellas deciden vivir juntas en Tokio.
+                                            Komatsu Nana comienza su nueva vida
+                                            en Tokio con su novio Shoji, y los
+                                            amigos de allí, Junko y Kyosuke. Por
+                                            otro lado, Osaki Nana se prepara
+                                            para su debut como vocalista de un
+                                            grupo de punk rock llamado...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/19.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Elfen Lied</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Drama</span>
+                                            <span
+                                                class="badge bg-primary">Psicológico</span>
+                                            <span
+                                                class="badge bg-primary">Romance</span>
+                                            <span
+                                                class="badge bg-primary">Seinen</span>
+                                            <span
+                                                class="badge bg-primary">Sobrenatural</span>
+                                            <span
+                                                class="badge bg-primary">Terror</span>
+                                        </div>
+                                        <p class="card-text">La historia se
+                                            centra en Lucy, una declonius (una
+                                            mutación del ser humano creada por
+                                            los hombres, que se caracteriza por
+                                            tener dos pequeños cuernos en la
+                                            cabeza y dos brazos invisibles de
+                                            dos metros) que consigue escapar del
+                                            centro de investigación donde la
+                                            tenían retenida junto a otros
+                                            declonius para estudiarla, en la
+                                            huida es alcanzada por un
+                                            francotirador que la destruye el
+                                            casco que protegía su cabeza
+                                            dejándola inconsciente. Lucy es
+                                            arrastrada por las olas hasta una
+                                            playa donde es encontrada por Kouta
+                                            y Yuca que la llevan a un viejo
+                                            restaurante. Debido al disparo del
+                                            francotirador Lucy ha perdido la
+                                            memoria por completo y pasa de ser
+                                            una sádica asesina a una inocente
+                                            chica que solo sabe decir Nyu, por
+                                            lo que Kouta y Yuca deciden llamarla
+                                            así. Con el paso del tiempo Lucy irá
+                                            recordando cosas del pasado.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/20.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Hellsing</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Seinen</span>
+                                            <span
+                                                class="badge bg-primary">Sobrenatural</span>
+                                            <span
+                                                class="badge bg-primary">Terror</span>
+                                            <span
+                                                class="badge bg-primary">Vampiros</span>
+                                        </div>
+                                        <p class="card-text">La historia trata
+                                            de un vampiro que no tiene nombre
+                                            propio, pero que heredó de su
+                                            familia el nombre de Alucard, el
+                                            vampiro parece ser indestructible
+                                            (no lo es), pero tiene un enemigo
+                                            muy peligroso que tampoco tiene
+                                            nombre, conocido como Incógnito, el
+                                            objetivo de Alucard es destruir a
+                                            Incógnito lo mas pronto posible,
+                                            para no tener mas víctimas en su
+                                            organización.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/21.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Tokyo Ghoul</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Acción</span>
+                                            <span
+                                                class="badge bg-primary">Drama</span>
+                                            <span
+                                                class="badge bg-primary">Misterio</span>
+                                            <span
+                                                class="badge bg-primary">Psicológico</span>
+                                            <span
+                                                class="badge bg-primary">Seinen</span>
+                                            <span
+                                                class="badge bg-primary">Sobrenatural</span>
+                                            <span
+                                                class="badge bg-primary">Terror</span>
+                                        </div>
+                                        <p class="card-text">Extraños asesinatos
+                                            se están sucediendo uno tras otro en
+                                            Tokyo. Debido a las pruebas
+                                            encontradas en las escenas, la
+                                            policía concluye que los ataques son
+                                            obra de ghouls que se comen a las
+                                            personas. Kaneki y Hide, dos
+                                            compañeros de clase, llegan a la
+                                            conclusión de que si nadie ha visto
+                                            nunca a esos necrófagos es porque
+                                            toman la apariencia de seres humanos
+                                            para ocultarse. Poco sabían entonces
+                                            de que su teoría sería más cierta de
+                                            lo que pensaban cuando Kaneki es
+                                            herido de gravedad por un monstruo y
+                                            comienza a atraerle cada vez más la
+                                            carne humana…</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <img src="./assets/img/22.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Monster</h3>
+                                        <div class="tags">
+                                            <span
+                                                class="badge bg-primary">Drama</span>
+                                            <span
+                                                class="badge bg-primary">Misterio</span>
+                                            <span
+                                                class="badge bg-primary">Policía</span>
+                                            <span
+                                                class="badge bg-primary">Psicológico</span>
+                                            <span
+                                                class="badge bg-primary">Seinen</span>
+                                            <span
+                                                class="badge bg-primary">Suspenso</span>
+                                            <span
+                                                class="badge bg-primary">Terror</span>
+                                        </div>
+                                        <p class="card-text">Kensou Tenma, un
+                                            reconocido medico cirujano de origen
+                                            japonés que vive en Alemania está
+                                            apunto de experimentar una historia
+                                            que le cambiará la vida : en el año
+                                            1986 en Dusseldorf mientras se
+                                            preparaba para operar a una
+                                            personalidad que llegaba en estado
+                                            crítico, una pareja de niños también
+                                            llegaba al hospital; la niña se
+                                            encontraba en estado de shock y el
+                                            niño estaba grave con una herida de
+                                            bala en la cabeza. Debatiéndose
+                                            entre lo más ético y en la moral,
+                                            Tenma accede a operar al niño yendo
+                                            en contra de sus superiores lo que
+                                            le acarrearía problemas ya que con
+                                            la muerte del paciente anterior, los
+                                            directivos del hospital se
+                                            encargaran de arruinar su
+                                            reputacion...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button"
+                            data-bs-target="#carruselImagenes"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button"
+                            data-bs-target="#carruselImagenes"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"
+                                aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+            <footer>
+                <p>Términos y condiciones</p>
+                <p>Preguntas Frecuentes</p>
+                <p>Ayuda</p>
+                <p>Administrador de Peliculas</p>
+            </footer>
+        </div>
+        <script
+            src="./js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
