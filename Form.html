@@ -31,6 +31,13 @@
     input[type="submit"]:hover {
       background-color: #45a049;
     }
+    form button {
+      color: #fff;
+      background-color: #45a049;
+      border: none;
+      width: 300px;
+      padding: 8px;
+    }
   </style>
 </head>
 <body>
@@ -39,7 +46,7 @@
 <form id="Form" action="/login" method="post">
   <input  type="text" name="username" placeholder="Usuario" required>
   <input  type="password" name="password" placeholder="Contraseña" required>
-  <input  type="submit" value="Iniciar sesión">
+  <button type="button" onclick="location.reload()">Iniciar Sesión</button>
 </form>
 
 <h2>Registrarse</h2>
@@ -50,7 +57,7 @@
   <input  type="text" name="email" placeholder="Correo electrónico" required>
   <input  type="text" name="username" placeholder="Usuario" required>
   <input  type="password" name="password" placeholder="Contraseña" required>
-  <input  type="submit" value="Registrarse">
+  <button type="button" onclick="location.reload()">Registrarse</button>
 </form>
 </div>
 </body>
