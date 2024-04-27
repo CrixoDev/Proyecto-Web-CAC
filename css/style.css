@@ -110,7 +110,9 @@ nav .linkNav a:last-child {
   color: #fff;
   margin-bottom: 30px;
 }
-
+.input{
+  display: flex;
+}
 .seccion-input .input input {
   width: 360px;
   height: 40px;
