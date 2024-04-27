@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrarse Besto Company</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body class="bodyform">
+        <h2 class="h2form">Registrarse</h2>
+        <div>
+            <form action="/registro" method="post">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido"
+                    required>
+                <input type="text" name="email" placeholder="Correo electrónico"
+                    required>
+                <input type="text" name="username" placeholder="Usuario"
+                    required>
+                <input type="password" name="password" placeholder="Contraseña"
+                    required>
+                <button type="button"
+                    onclick="location.reload()">Registrarse</button>
+                    <br><br>
+                    <a href="login.html"><button type="button">Iniciar Sección</button></a>
+                    <br><br>
+                    <a href="index.html"><button type="button">Home</button></a>
+            </form>
+        </div>
+    </body>
+</html>
