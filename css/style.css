@@ -73,11 +73,12 @@ nav .linkNav a:last-child {
   z-index: -100;
   object-fit: cover;
   width: 100%;
+  height: 100%;
   margin-top: 60px;
 }
 
 .seccion-main h1 {
-  color:#fff;
+  color: #fff;
   font-size: 60px;
 }
 
@@ -101,7 +102,7 @@ nav .linkNav a:last-child {
   display: flex;
   background-color: rgb(68, 2, 46);
   justify-content: center;
-  align-items: center;    
+  align-items: center;
   flex-direction: column;
   height: 25rem;
 }
@@ -110,9 +111,11 @@ nav .linkNav a:last-child {
   color: #fff;
   margin-bottom: 30px;
 }
-.input{
+
+.input {
   display: flex;
 }
+
 .seccion-input .input input {
   width: 360px;
   height: 40px;
@@ -133,7 +136,7 @@ nav .linkNav a:last-child {
   color: #ffffff;
   background-color: #850a55;
   border: 2px solid #fff;
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .seccion-input .input button:hover {
@@ -176,7 +179,7 @@ nav .linkNav a:last-child {
   object-fit: cover;
   height: 300px;
   box-shadow: 0px 0px 20px rgb(68, 2, 46);
-  transition: all .5s;
+  transition: all 0.5s;
   border-radius: 15px;
 }
 
@@ -219,6 +222,9 @@ nav .linkNav a:last-child {
 .seccion-carousel .cards .card img {
   border-radius: 15px;
   cursor: pointer;
+  object-fit: cover;
+  width: 200px;
+  height: 300px;
 }
 
 .seccion-carousel::-webkit-scrollbar {
@@ -235,7 +241,7 @@ nav .linkNav a:last-child {
 }
 
 footer {
-  display: flex;    
+  display: flex;
   background-color: rgb(68, 2, 46);
   margin-top: 30px;
   flex-direction: column;
@@ -264,13 +270,13 @@ footer a:last-child p {
   border-radius: 5px;
 }
 
-
 .bodyform {
   font-family: Arial, sans-serif;
   background-color: rgb(68, 2, 46);
   margin: 5%;
   text-align: center;
 }
+
 .h2form {
   color: greenyellow;
   margin-bottom: 3%;
@@ -280,6 +286,7 @@ form {
   max-width: 300px;
   margin: 0 auto;
 }
+
 input[type="text"],
 input[type="password"],
 input[type="submit"] {
@@ -289,15 +296,18 @@ input[type="submit"] {
   padding: 8px;
   box-sizing: border-box;
 }
+
 input[type="submit"] {
   background-color: #4caf50;
   color: white;
   border: none;
   cursor: pointer;
 }
+
 input[type="submit"]:hover {
   background-color: #45a049;
 }
+
 form button {
   color: #fff;
   background-color: #45a049;
