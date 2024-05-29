@@ -30,17 +30,19 @@ nav .linkNav {
   flex-direction: row;
   justify-content: space-between;
   width: 30%;
-  margin-right: 5%;
-  color: #fff;
+  margin-right: 20px;
+  color: rgb(68, 2, 46);
   font-size: 18px;
   font-weight: bold;
   position: relative;
+  gap: 5%;
 }
 
 nav .linkNav a {
   text-decoration: none;
   color: #fff;
   height: 30px;
+  justify-content: space-between;
 }
 
 nav .linkNav a:last-child {
@@ -273,13 +275,23 @@ footer a:last-child p {
 .bodyform {
   font-family: Arial, sans-serif;
   background-color: rgb(68, 2, 46);
+  background-image:url(/Proyecto-Web-CAC/assets/img/Registro-Form2.jpg); width: auto; height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+
   margin: 5%;
   text-align: center;
 }
 
 .h2form {
-  color: greenyellow;
+  color: rgb(195, 29, 140);
   margin-bottom: 3%;
+  background-color: #daadd1;
+  padding: 2px;
+  border-radius: 5px;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form {
@@ -298,21 +310,27 @@ input[type="submit"] {
 }
 
 input[type="submit"] {
-  background-color: #4caf50;
-  color: white;
+  background-color: #daadd1;
+  color:  rgb(195, 29, 140);
   border: none;
   cursor: pointer;
+  border-radius: 5px;
+  font-weight: bolder;
 }
 
 input[type="submit"]:hover {
-  background-color: #45a049;
+  background-color: #daadd1;
+  border-radius: 5px;
+  font-weight: bolder;
 }
 
 form button {
-  color: #fff;
-  background-color: #45a049;
+  color: rgb(195, 29, 140);
+  background-color: #daadd1;
   border: none;
   width: 300px;
   padding: 8px;
   cursor: pointer;
+  border-radius: 5px;
+  font-weight: bolder;
 }
