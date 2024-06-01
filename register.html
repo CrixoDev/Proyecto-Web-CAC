@@ -9,23 +9,81 @@
     <body class="bodyform">
         <h2 class="h2form">Registrarse</h2>
         <div>
-            <form action="/registro" method="post">
-                <input type="text" name="nombre" placeholder="Nombre" required>
-                <input type="text" name="apellido" placeholder="Apellido"
-                    required>
-                <input type="text" name="email" placeholder="Correo electrónico"
-                    required>
-                <input type="text" name="username" placeholder="Usuario"
-                    required>
-                <input type="password" name="password" placeholder="Contraseña"
-                    required>
-                <button type="button"
-                    onclick="location.reload()">Registrarse</button>
-                    <br><br>
-                    <a href="login.html"><button type="button">Iniciar Sección</button></a>
-                    <br><br>
-                    <a href="index.html"><button type="button">Home</button></a>
+            <form id="registrationForm" action="/registro" method="post">
+                <div>
+                    <input type="text" name="nombre" placeholder="Nombre" required pattern="[a-zA-Z\s]+" title="El nombre solo debe contener letras y espacios.">
+                    <div class="error" id="nombreError"></div>
+                </div>
+                <div>
+                    <input type="text" name="apellido" placeholder="Apellido" required pattern="[a-zA-Z\s]+" title="El apellido solo debe contener letras y espacios.">
+                    <div class="error" id="apellidoError"></div>
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <div class="error" id="emailError"></div>
+                </div>
+                <div>
+                    <input type="text" name="username" placeholder="Usuario" required minlength="4" title="El nombre de usuario debe tener al menos 4 caracteres.">
+                    <div class="error" id="usernameError"></div>
+                </div>
+                <div>
+                    <input type="password" name="password" placeholder="Contraseña" required minlength="6" title="La contraseña debe tener al menos 6 caracteres.">
+                    <div class="error" id="passwordError"></div>
+                </div>
+                <div>
+                    <input type="password" name="confirm_password" placeholder="Confirmar Contraseña" required minlength="6" title="La contraseña debe tener al menos 6 caracteres.">
+                    <div class="error" id="confirmPasswordError"></div>
+                </div>
+                <button type="submit">Registrarse</button>
+                <br><br>
+                <a href="login.html"><button type="button">Iniciar Sección</button></a>
+                <br><br>
+                <a href="index.html"><button type="button">Home</button></a>
             </form>
         </div>
+    
+            <script>
+                document.getElementById('registrationForm').addEventListener('submit', function(event) {
+                    var form = event.target;
+                    var password = form.password.value;
+                    var confirmPassword = form.confirm_password.value;
+    
+                    // Validación de coincidencia de contraseñas
+                    if (password !== confirmPassword) {
+                        document.getElementById('confirmPasswordError').innerText = 'Las contraseñas no coinciden';
+                        document.getElementById('confirmPasswordError').style.display = 'block';
+                        event.preventDefault(); // Prevenir el envío del formulario
+                    } else {
+                        document.getElementById('confirmPasswordError').style.display = 'none';
+                    }
+                });
+    
+                // Validar los campos del formulario y mostrar mensajes personalizados
+                var inputs = document.querySelectorAll('input[required], input[minlength], input[pattern]');
+    
+                inputs.forEach(input => {
+                    input.addEventListener('invalid', function(event) {
+                        event.preventDefault();
+                        var errorElement = document.getElementById(input.name + 'Error');
+                        if (!input.validity.valid) {
+                            if (input.validity.valueMissing) {
+                                errorElement.innerText = 'Este campo es obligatorio';
+                            } else if (input.validity.patternMismatch) {
+                                errorElement.innerText = input.title;
+                            } else if (input.validity.tooShort) {
+                                errorElement.innerText = 'La longitud mínima es de ' + input.minLength + ' caracteres';
+                            }
+                            errorElement.style.display = 'block';
+                        } else {
+                            errorElement.style.display = 'none';
+                        }
+                    });
+    
+                    input.addEventListener('input', function(event) {
+                        var errorElement = document.getElementById(input.name + 'Error');
+                        errorElement.style.display = 'none';
+                    });
+                });
+            </script>
     </body>
 </html>

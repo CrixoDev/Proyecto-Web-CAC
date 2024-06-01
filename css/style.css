@@ -209,7 +209,7 @@ nav .linkNav a:last-child {
 
 .seccion-carousel .cards {
   display: flex;
-  margin: 80px 20px 30px 20px;
+  margin: 70px 20px 30px 20px;
   width: fit-content;
 }
 
@@ -278,7 +278,6 @@ footer a:last-child p {
   background-image:url(/Proyecto-Web-CAC/assets/img/Registro-Form2.jpg); width: auto; height: auto;
   background-size: cover;
   background-repeat: no-repeat;
-
   margin: 5%;
   text-align: center;
 }
@@ -333,4 +332,8 @@ form button {
   cursor: pointer;
   border-radius: 5px;
   font-weight: bolder;
+}
+
+.error {
+  color: white;
 }
